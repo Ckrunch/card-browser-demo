@@ -1,0 +1,22 @@
+<div class="app-container">
+  <h1>Magic: The Gathering Card Showcase</h1>
+  <div class="navigation-buttons">
+    <button (click)="getFirst()">First</button>
+    <button (click)="goToPrevious()">Previous</button>
+    <button (click)="goToRandom()">Random</button>
+    <button (click)="goToNext()">Next</button>
+    <button (click)="getLast()">Last</button>
+  </div>
+  <div class="app-card">
+  <app-card
+  [cardName]="mtgCard.cardName"
+  [cardImage]="mtgCard.cardImage"
+  [manaCost]="mtgCard.manaCost"
+  [cardType]="mtgCard.cardType"
+  [cardText]="mtgCard.cardText"
+  [powerToughness]="mtgCard.powerToughness">
+</app-card>
+</div>
+
+
+</div>
